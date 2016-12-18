@@ -14,7 +14,7 @@ export default class List extends Component {
         <ul>
           <Item />
         </ul>
-        <a className="block" href={Routes.root_path()}>Home page</a>
+        <a className="block" href={Routes.root_path()}>Home page (react)</a>
         <a
           className="block"
           href={Routes.lists_vue_path()}
