@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "react-mounter": "^1.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
