@@ -9,12 +9,8 @@ namespace :assets do
 
   desc 'Compile assets with webpack'
 
-  task :webpacker do
-    sh 'bundle exec rails webpacker:install'
-  end
-
-  task :react do
-    sh 'bundle exec rails webpacker:install:react'
+  task :yarn do
+    sh 'bundle exec ./bin/yarn'
   end
 
   task :webpack do
