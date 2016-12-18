@@ -10,6 +10,11 @@ module.exports = merge(config, {
   output: { filename: "[name]-[hash].js" },
 
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: JSON.stringify("production")
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ]
 });
