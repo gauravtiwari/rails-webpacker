@@ -1,5 +1,20 @@
 {
   "name": "rails-webpacker",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.12.2",
+    "path-complete-extname": "^0.1.0",
+    "rails-erb-loader": "^3.2.0",
+    "webpack": "beta",
+    "webpack-merge": "^1.1.1"
+  }
 }

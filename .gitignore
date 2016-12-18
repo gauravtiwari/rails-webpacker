@@ -20,3 +20,6 @@
 /vendor/node_modules
 
 .byebug_history
+
+# Ignore files compiled by webpacker.
+public/packs/*
