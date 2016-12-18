@@ -12,7 +12,14 @@ export default class Home extends Component {
       <main>
         <Content />
         <Sidebar />
-        <a href={Routes.lists_path()}>Lists page</a>
+        <a
+          className="block"
+          href={Routes.home_vue_path()}
+        >
+          Home page(vue version)
+        </a>
+        <a className="block" href={Routes.lists_path()}>Lists page</a>
+        <a className="block" href={Routes.lists_vue_path()}>Lists page</a>
       </main>
     );
   }
