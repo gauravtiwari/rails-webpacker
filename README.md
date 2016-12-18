@@ -1,24 +1,6 @@
-# README
+# Rails Webpacker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Demo app that showcases Rails on webpack and yarn using Webpacker gem (default setup in Rails 5.1)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Webpacker](https://github.com/rails/webpacker)
+* [PR](https://github.com/rails/rails/pull/26836)
