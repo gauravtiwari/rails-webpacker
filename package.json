@@ -1,4 +1,13 @@
 {
   "name": "rails-webpacker",
-  "private": true
+  "private": true,
+  "engines": {
+    "node": "6.7.0",
+    "npm": "3.10.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gauravtiwari/rails-webpacker.git"
+  },
+  "license": "MIT"
 }
