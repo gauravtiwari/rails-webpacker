@@ -1,8 +1,8 @@
 // Note: You must restart bin/webpack-watcher for changes to take effect
 
-var path = require('path')
-var glob = require('glob')
-var extname = require('path-complete-extname')
+var path = require('path');
+var glob = require('glob');
+var extname = require('path-complete-extname');
 
 module.exports = {
   entry: glob.sync(path.join('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
