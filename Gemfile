@@ -6,7 +6,11 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', github: 'rails/rails'
-gem 'sqlite3'
+
+group :development do
+  gem 'sqlite3'
+end
+
 gem 'coffee-rails'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', github: 'rails/sass-rails'
@@ -18,6 +22,10 @@ gem 'js-routes'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :development do
