@@ -3,15 +3,11 @@ Rake::Task['assets:precompile']
   .enhance(['assets:compile_environment'])
 
 namespace :assets do
-  task compile_environment: :yarn do
+  task compile_environment: [:yarn, :webpack] do
     Rake::Task['assets:environment'].invoke
   end
 
-  task compile_environment: :webpack do
-    Rake::Task['assets:environment'].invoke
-  end
-
-  desc 'Install node deps'
+  desc 'Install node deps via yarn'
 
   task :yarn do
     sh 'bundle exec ./bin/yarn'
