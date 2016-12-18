@@ -1,5 +1,6 @@
 {
   "name": "rails-webpacker",
+  "description": "Rails on webpack and yarn with new webpacker gem",
   "private": true,
   "engines": {
     "node": "6.7.0",
