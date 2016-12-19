@@ -1,5 +1,5 @@
 import ListVue from './list-vue';
 
-document.addEventListener('turbolinks:load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   ListVue
 });
