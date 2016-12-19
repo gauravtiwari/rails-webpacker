@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import { mount, withOptions } from 'react-mounter';
-import List from './list/index';
+import Home from './home';
 
-mount(List);
+mount(Home);

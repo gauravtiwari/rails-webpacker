@@ -2,5 +2,5 @@
 
 //= require rails-ujs
 //= require js-routes
-//= require turbolinks
+// require turbolinks
 //= require_tree .

@@ -18,6 +18,7 @@ export default class Home extends Component {
         >
           Home page(vue version)
         </a>
+        <a className="block" href={Routes.home_angular_path()}>Home page (angular2)</a>
         <a className="block" href={Routes.lists_path()}>Lists page (react)</a>
         <a className="block" href={Routes.lists_vue_path()}>Lists page (vue)</a>
       </main>

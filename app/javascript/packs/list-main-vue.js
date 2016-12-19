@@ -1,5 +1,5 @@
-import HomeVue from './home-vue/index';
+import ListVue from './list-vue';
 
 document.addEventListener('turbolinks:load', () => {
-  HomeVue
+  ListVue
 });

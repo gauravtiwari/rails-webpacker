@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def home_vue
   end
+
+  def home_angular
+  end
 end
