@@ -11,6 +11,11 @@ module.exports = merge(config, {
   output: { filename: "[name]-[hash].js" },
 
   plugins: [
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production')
@@ -34,7 +39,7 @@ module.exports = merge(config, {
     }),
 
     new OptimizeJsPlugin({
-        sourceMap: false
+      sourceMap: false
     })
   ]
 });
