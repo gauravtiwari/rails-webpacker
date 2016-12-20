@@ -1,4 +1,3 @@
-/* global Routes */
 import React, { Component } from 'react';
 
 export default class Item extends Component {
@@ -8,7 +7,10 @@ export default class Item extends Component {
 
   render() {
     return (
-      <li>List item 1</li>
+      <div>
+        <li>List item 1</li>
+        <li>List item 2</li>
+      </div>
     );
   }
 }

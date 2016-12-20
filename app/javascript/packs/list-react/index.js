@@ -1,6 +1,5 @@
-/* global Routes */
-
 import React, { Component } from 'react';
+import SharedNav from '../shared/nav';
 import Item from './item';
 
 export default class List extends Component {
@@ -11,14 +10,8 @@ export default class List extends Component {
   render() {
     return (
       <div className="list">
-        <ul>
-          <Item />
-        </ul>
-        <a className="block" href={Routes.root_path()}>Home page (react)</a>
-        <a
-          className="block"
-          href={Routes.lists_vue_path()}
-        >Lists page (vue version)</a>
+        <ul><Item /></ul>
+        <SharedNav />
       </div>
     );
   }

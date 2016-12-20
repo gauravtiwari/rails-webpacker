@@ -1,12 +1,10 @@
-<main id="vue_home_app" v-cloak>
+<div id="vue_home_app" v-cloak>
   <div class="container">
     <h1>{{ container }}</h1>
   </div>
   <aside>
     <h1>{{ sidebar }}</h1>
   </aside>
-  <%= link_to('Home page (react)', root_path, class: 'block') %>
-  <%= link_to('Lists page (react)', lists_path, class: 'block') %>
-  <%= link_to('App page (react-router)', home_router_path, class: 'block') %>
-</main>
+  <%= render 'shared/nav' %>
+</div>
 <%= javascript_pack_tag 'home-vue-component' %>

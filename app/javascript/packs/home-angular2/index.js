@@ -31,6 +31,9 @@ HomeComponent.annotations = [
                 <a class="block" href="${Routes.lists_vue_path()}">
                   Lists page (vue)
                 </a>
+                <a class="block" href="${Routes.home_router_path()}">
+                  App page (react-router)
+                </a>
               </main>`
   })
 ];
