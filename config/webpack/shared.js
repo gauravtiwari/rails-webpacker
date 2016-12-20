@@ -34,6 +34,10 @@ module.exports = {
           runner: '../bin/rails runner'
         }
       },
+      {
+        test: /\.sass$/,
+        loader: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ]
   },
 
