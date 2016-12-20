@@ -20,11 +20,15 @@
     "babel-preset-react": "^6.16.0",
     "coffee-loader": "^0.7.2",
     "coffee-script": "^1.12.2",
+    "css-loader": "^0.26.1",
     "glob": "^7.1.1",
+    "node-sass": "^4.1.0",
     "optimize-js-plugin": "^0.0.4",
     "path": "^0.12.7",
     "path-complete-extname": "^0.1.0",
     "rails-erb-loader": "^3.2.0",
+    "sass-loader": "^4.1.0",
+    "style-loader": "^0.13.1",
     "webpack": "beta",
     "webpack-merge": "^1.1.1"
   }
