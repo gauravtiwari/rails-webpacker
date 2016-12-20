@@ -20,6 +20,7 @@
     "coffee-loader": "^0.7.2",
     "coffee-script": "^1.12.2",
     "glob": "^7.1.1",
+    "optimize-js-plugin": "^0.0.4",
     "path": "^0.12.7",
     "path-complete-extname": "^0.1.0",
     "rails-erb-loader": "^3.2.0",
