@@ -29,7 +29,7 @@
     "rails-erb-loader": "^3.2.0",
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",
-    "webpack": "beta",
+    "webpack": "2.2.0-rc.1",
     "webpack-merge": "^1.1.1"
   }
 }
