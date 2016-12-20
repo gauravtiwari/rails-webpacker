@@ -1,0 +1,22 @@
+#!/bin/bash -i
+
+# Install System Dependencies
+green=`tput setaf 2`
+reset=`tput sgr0`
+which brew
+if [ $? -eq 0 ]
+then
+  echo "${green}Brewing system dependencies....${reset}"
+  brew update
+  which yarn
+  if [ $? -ne 0 ]
+  then
+    brew install yarn
+  fi
+else
+  echo "You will need to install brew manually."
+fi
+
+# Install Rails and Node Dependencies
+bundle install
+./bin/yarn install
