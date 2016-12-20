@@ -10,10 +10,20 @@ Demo app that showcases Rails on webpack and yarn using Webpacker gem (default s
 The app is using [foreman](https://github.com/ddollar/foreman), the famous process manager. Checkout the `Procfile.dev` in app root for more information.
 
 ```bash
+  git clone git@github.com:gauravtiwari/rails-webpacker.git
+  cd rails-webpacker
   bundle install
   brew install yarn # (if not installed)
   ./bin/yarn install
 ```
+
+Or, just run prepare script to install everything after cloning the repo
+
+```bash
+  ./prepare # only on macOS
+```
+
+(try `chmod 777 prepare` incase it doesn't work)
 
 Then run the server,
 
@@ -21,3 +31,17 @@ Then run the server,
   ./start
 ```
 (try `chmod 777 start` incase it doesn't work)
+
+
+# Installing new node modules
+
+```bash
+  # Using Yarn
+  ./bin/yarn add material-ui
+```
+
+Then import in your component,
+
+```js
+  import { Card } from 'material-ui/Card';
+```
