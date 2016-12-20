@@ -8,6 +8,7 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-mounter": "^1.2.0",
+    "react-router": "^3.0.0",
     "rxjs": "^5.0.1",
     "vue": "^2.1.6",
     "zone.js": "^0.7.2"
