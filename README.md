@@ -20,7 +20,7 @@ The app is using [foreman](https://github.com/ddollar/foreman), famous process m
 Or just run prepare script to install everything after cloning the repo
 
 ```bash
-  ./prepare # only on macOS
+  ./bin/prepare # only on macOS
 ```
 
 (try `chmod 777 prepare` incase it doesn't work)
@@ -28,7 +28,7 @@ Or just run prepare script to install everything after cloning the repo
 Then, run the server,
 
 ```bash
-  ./start
+  ./bin/start
 ```
 (try `chmod 777 start` incase it doesn't work)
 
