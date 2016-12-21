@@ -23,14 +23,14 @@ Or just run prepare script to install everything after cloning the repo
   ./bin/prepare # only on macOS
 ```
 
-(try `chmod 777 prepare` incase it doesn't work)
+(try `chmod 777 ./bin/prepare` incase it doesn't work)
 
 Then, run the server,
 
 ```bash
   ./bin/start
 ```
-(try `chmod 777 start` incase it doesn't work)
+(try `chmod 777 ./bin/start` incase it doesn't work)
 
 
 # Installing new node modules
