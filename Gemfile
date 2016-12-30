@@ -7,6 +7,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', github: 'rails/rails'
+gem 'arel', github: 'rails/arel'
 
 group :development do
   gem 'sqlite3'
