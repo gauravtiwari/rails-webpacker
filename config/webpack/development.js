@@ -20,10 +20,11 @@ module.exports = merge(config, {
 
   plugins: [
     new webpack.LoaderOptionsPlugin({
-      debug: true
+      debug: true,
     }),
+
     new OptimizeJsPlugin({
-        sourceMap: false
+      sourceMap: false
     })
   ]
 });

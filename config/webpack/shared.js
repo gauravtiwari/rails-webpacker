@@ -17,13 +17,13 @@ module.exports = {
 
   module: {
     rules: [
-      { test: /\.coffee(.erb)?$/, loader: "coffee-loader" },
+      { test: /\.coffee(.erb)?$/, loader: 'coffee-loader' },
       {
         test: /\.jsx?(.erb)?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['react',  ['latest', { 'es2015': { 'modules': false } }]]
+          presets: ['react',  ['latest', { 'es2015': { 'modules': false } }]],
         }
       },
       {
