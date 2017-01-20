@@ -20,6 +20,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker', github: 'rails/webpacker'
 gem 'turbolinks', '~> 5'
 gem 'js-routes'
+gem 'figaro'
+gem 'jbuilder'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri
