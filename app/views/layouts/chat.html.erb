@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails on Webpack and Yarn</title>
+    <title>Rails on Webpack and Yarn - Chat example</title>
     <meta
       name="description"
-      content="Rails on webpack and yarn with new webpacker gem"
+      content="Rails on webpack and yarn with new webpacker gem - Chat example"
     />
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -21,13 +21,15 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="turbolinks-cache-control" content="no-cache">
+    <meta name="authenticated" content="<%= user_signed_in? %>">
+
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <main class="app-layout">
+    <main class="chat-layout">
       <%= yield %>
     </main>
   </body>
