@@ -28,9 +28,9 @@ Or just run prepare script to install everything after cloning the repo
 Then, run the server,
 
 ```bash
-  ./bin/start
+  ./bin/server
 ```
-(try `chmod 777 ./bin/start` incase it doesn't work)
+(try `chmod 777 ./bin/server` incase it doesn't work)
 
 
 # Installing new node modules
