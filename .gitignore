@@ -23,3 +23,6 @@
 
 # Ignore files compiled by webpacker.
 public/packs/*
+
+# Ignore application configuration
+/config/application.yml
