@@ -9,6 +9,10 @@ export default class Composer extends Component {
     this.state = { text: '' };
   }
 
+  componentDidMount() {
+    this.composerNode.focus();
+  }
+
   onChange(event, value) {
     const authenticated = document.getElementsByName('authenticated')[0].content;
     if (!JSON.parse(authenticated)) {
@@ -33,7 +37,7 @@ export default class Composer extends Component {
           if (err) {
             console.log('Error!');
           } else {
-            console.log('Success');
+            console.log('Success:)');
           }
         })
       }
@@ -46,6 +50,7 @@ export default class Composer extends Component {
       <textarea
         className="message-composer"
         name="message"
+        ref={node => (this.composerNode = node)}
         value={this.state.text}
         onChange={this.onChange.bind(this)}
         onKeyDown={this.onKeyDown.bind(this)}
