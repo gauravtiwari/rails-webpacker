@@ -12,7 +12,7 @@ class ChatRoom < ApplicationRecord
     self.slug = topic.parameterize
   end
 
-  def cleanup_old_searches
+  def cleanup_old_chat_rooms
     ChatRoom.order(id: :desc).offset(20).destroy_all
   end
 end
