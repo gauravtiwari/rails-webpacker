@@ -1,5 +1,7 @@
-<%= form_for @room, authenticity_token: true do |f| %>
-  <%= f.label :topic %>:
-  <%= f.text_area :topic, placeholder: 'Enter topic name' %>
-  <%= f.submit 'send', class: 'btn btn-primary' %>
-<% end %>
+<div class="new-chat-room">
+  <%= form_for @chat_room, authenticity_token: true do |f| %>
+    <%= f.label :topic %>:
+    <%= f.text_area :topic, placeholder: 'Enter topic name', autofocus: true %>
+    <%= f.submit 'Create' %>
+  <% end %>
+</div>

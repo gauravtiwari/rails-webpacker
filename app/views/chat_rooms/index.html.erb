@@ -1,0 +1,11 @@
+<div class="chat-rooms">
+  <ul>
+    <% @chat_rooms.each do |room| %>
+      <li><%= link_to(room.topic, chat_room_path(room.slug)) %></li>
+    <% end %>
+  </ul>
+
+  <div class="links">
+    <%= link_to('New Chat Room', new_chat_room_path) %>
+  </div>
+</div>
