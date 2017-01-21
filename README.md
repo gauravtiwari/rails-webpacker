@@ -5,6 +5,13 @@ Demo app that showcases Rails on webpack and yarn using Webpacker gem (default s
 * [Webpacker](https://github.com/rails/webpacker)
 * [PR](https://github.com/rails/rails/pull/26836)
 
+# Examples
+
+* React + Demo HTML
+* Angular + Demo HTML
+* Vue + Demo HTML
+* React + ActionCable + Chat
+
 # Running in development
 
 The app is using [foreman](https://github.com/ddollar/foreman), famous process manager. Checkout the `Procfile.dev` in app root for more information.
