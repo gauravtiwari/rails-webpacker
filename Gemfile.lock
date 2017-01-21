@@ -93,6 +93,13 @@ GIT
       multi_json (~> 1.2)
       railties (~> 5)
 
+GIT
+  remote: https://github.com/romanbsd/heroku-deflater.git
+  revision: 60d92ba0f8ae2b51b9496ffba85d0d73f0071b9f
+  specs:
+    heroku-deflater (0.6.2)
+      rack (>= 1.4.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -201,6 +208,7 @@ DEPENDENCIES
   devise
   figaro
   foreman
+  heroku-deflater!
   jbuilder
   js-routes
   listen (>= 3.0.5, < 3.2)
