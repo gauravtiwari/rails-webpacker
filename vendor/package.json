@@ -5,14 +5,14 @@
     "angular2": "^2.0.0-beta.21",
     "es6-promise": "^4.0.5",
     "es6-shim": "^0.35.2",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-mounter": "^1.2.0",
-    "react-router": "^3.0.0",
+    "react-router": "^3.0.2",
     "rxjs": "^5.0.1",
     "superagent": "^3.3.2",
     "superagent-no-cache": "^0.1.0",
-    "vue": "^2.1.6",
+    "vue": "^2.1.10",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "rails-erb-loader": "^3.2.0",
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",
-    "webpack": "2.2.0-rc.1",
+    "webpack": "^2.2.1",
     "webpack-merge": "^1.1.1"
   }
 }
