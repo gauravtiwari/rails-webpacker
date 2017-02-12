@@ -44,6 +44,10 @@ module.exports = {
   plugins: [],
 
   resolve: {
+    alias: {
+      'ie': 'component-ie',
+    },
+
     extensions: [ '.js', '.coffee' ],
     modules: [
       path.resolve('../app/javascript'),
