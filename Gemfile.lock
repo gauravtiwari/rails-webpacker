@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/rails/arel.git
-  revision: f5f81be73df89011fe9bc89915b99d81e0c9a67f
+  revision: d6af2090b16f7d061aa43913d610c6fada58b7e2
   specs:
     arel (8.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: a3813dce9a0c950a4af7909111fa730a2622b1db
+  revision: acdbe70a02f4eec9e7dc085dfce615a3ddaf9d37
   specs:
     actioncable (5.1.0.alpha)
       actionpack (= 5.1.0.alpha)
@@ -28,9 +28,9 @@ GIT
     actionview (5.1.0.alpha)
       activesupport (= 5.1.0.alpha)
       builder (~> 3.1)
-      erubis (~> 2.7.0)
+      erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
-      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
     activejob (5.1.0.alpha)
       activesupport (= 5.1.0.alpha)
       globalid (>= 0.3.6)
@@ -86,18 +86,18 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: 8916a53be9ce8cc7be9ae500de0687ef56515683
+  revision: 023e5dbda8fd8bbe6e6f24788b0b45a3e72080ff
   specs:
     webpacker (0.2)
-      activesupport (>= 3.0.0, < 5.1)
+      activesupport (>= 5.0)
       multi_json (~> 1.2)
-      railties (~> 5)
+      railties (>= 5.0)
 
 GIT
   remote: https://github.com/romanbsd/heroku-deflater.git
-  revision: 60d92ba0f8ae2b51b9496ffba85d0d73f0071b9f
+  revision: 3f0a360bfa4aea9159935201fff837fafdbe267f
   specs:
-    heroku-deflater (0.6.2)
+    heroku-deflater (0.6.3)
       rack (>= 1.4.5)
 
 GEM
@@ -121,7 +121,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
-    erubis (2.7.0)
+    erubi (1.5.0)
     execjs (2.7.0)
     ffi (1.9.17)
     figaro (1.1.1)
@@ -130,7 +130,7 @@ GEM
       thor (~> 0.19.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    i18n (0.7.0)
+    i18n (0.8.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -157,7 +157,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     pg (0.19.0)
-    puma (3.6.2)
+    puma (3.7.0)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -168,9 +168,9 @@ GEM
       loofah (~> 2.0)
     rake (12.0.0)
     rb-fsevent (0.9.8)
-    rb-inotify (0.9.7)
+    rb-inotify (0.9.8)
       ffi (>= 0.5.0)
-    redis (3.3.2)
+    redis (3.3.3)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     ruby_dep (1.5.0)
@@ -192,9 +192,9 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
-    warden (1.2.6)
+    warden (1.2.7)
       rack (>= 1.0)
-    websocket-driver (0.6.4)
+    websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
 
