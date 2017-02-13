@@ -23,7 +23,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['react',  ['latest', { 'es2015': { 'modules': false } }]],
+          presets: [
+            'react',  ['latest', { 'es2015': { 'modules': false } }],
+            ['env', { "modules": false }],
+          ],
         }
       },
       {
