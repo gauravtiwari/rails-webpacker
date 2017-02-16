@@ -1,8 +1,8 @@
 import React from 'react';
-import Home from './home-react';
-import App from './home-react-router/app';
-import About from './home-react-router/about'
-import Repos from './home-react-router/repos'
+import Home from '../home-react';
+import App from '../home-react-router/app';
+import About from '../home-react-router/about'
+import Repos from '../home-react-router/repos'
 import { render } from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router'
 

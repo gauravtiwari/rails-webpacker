@@ -1,4 +1,4 @@
-import HomeVue from './home-vue';
+import HomeVue from '../home-vue';
 
 document.addEventListener('DOMContentLoaded', () => {
   HomeVue
