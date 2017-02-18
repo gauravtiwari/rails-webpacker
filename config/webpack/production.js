@@ -4,9 +4,9 @@ var webpack = require('webpack');
 var merge   = require('webpack-merge');
 var OptimizeJsPlugin = require('optimize-js-plugin');
 
-var config = require('./shared.js');
+var sharedConfig = require('./shared.js');
 
-module.exports = merge(config, {
+module.exports = merge(sharedConfig.config, {
   output: { filename: "[name]-[hash].js" },
 
   plugins: [
