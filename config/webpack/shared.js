@@ -10,7 +10,7 @@ if (distPath === undefined) {
 }
 
 var config = {
-  entry: glob.sync(path.join('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
+  entry: glob.sync(path.resolve('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
     function(map, entry) {
       basename = path.basename(entry, extname(entry))
       map[basename] = entry;
@@ -18,7 +18,7 @@ var config = {
     }, {}
   ),
 
-  output: { filename: '[name].js', path: path.join('..', 'public', 'packs') },
+  output: { filename: '[name].js', path: path.resolve('..', 'public', distPath) },
 
   module: {
     rules: [
