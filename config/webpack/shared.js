@@ -4,8 +4,8 @@ var path = require('path');
 var glob = require('glob');
 var extname = require('path-complete-extname');
 
-module.exports = {
-  entry: glob.sync(path.resolve('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
+var config = {
+  entry: glob.sync(path.join('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
     function(map, entry) {
       basename = path.basename(entry, extname(entry))
       map[basename] = entry;
@@ -13,7 +13,7 @@ module.exports = {
     }, {}
   ),
 
-  output: { filename: '[name].js', path: path.resolve('..', 'public', 'packs') },
+  output: { filename: '[name].js', path: path.join('..', 'public', 'packs') },
 
   module: {
     rules: [
@@ -61,4 +61,9 @@ module.exports = {
   resolveLoader: {
     modules: [ path.resolve('../vendor/node_modules') ]
   }
+}
+
+module.exports = {
+  distPath: distPath,
+  config: config
 }
