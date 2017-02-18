@@ -1,2 +1,3 @@
 web: bundle exec rails s
-webpack: ./bin/webpack-watcher
+# watcher: ./bin/webpack-watcher
+hot: ./bin/webpack-dev-server
