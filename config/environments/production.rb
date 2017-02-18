@@ -1,6 +1,13 @@
 Rails.application.configure do
   # Make javascript_pack_tag lookup digest hash to enable long-term caching
   config.x.webpacker[:digesting] = true
+  config.x.webpacker[:packs_dist_path] = 'packs'
+  config.x.webpacker[:digests_path] = \
+    Rails.root.join(
+      'public',
+      config.x.webpacker[:packs_dist_path],
+      'digests.json'
+    )
 
   # Settings specified here will take precedence over those in config/application.rb.
 
