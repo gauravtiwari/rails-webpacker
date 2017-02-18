@@ -8,7 +8,5 @@ Bundler.require(*Rails.groups)
 
 module RailsWebpacker
   class Application < Rails::Application
-    config.x.webpacker[:packs_dist_path] = 'packs'
-    config.x.webpacker[:digests_path] = 'packs'
   end
 end
