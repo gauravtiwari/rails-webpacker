@@ -5,7 +5,7 @@ var glob = require('glob');
 var extname = require('path-complete-extname');
 
 module.exports = {
-  entry: glob.sync(path.join('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
+  entry: glob.sync(path.resolve('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
     function(map, entry) {
       basename = path.basename(entry, extname(entry))
       map[basename] = entry;
@@ -13,7 +13,7 @@ module.exports = {
     }, {}
   ),
 
-  output: { filename: '[name].js', path: path.join('..', 'public', 'packs') },
+  output: { filename: '[name].js', path: path.resolve('..', 'public', 'packs') },
 
   module: {
     rules: [
