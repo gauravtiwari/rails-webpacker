@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/rails/arel.git
-  revision: d6af2090b16f7d061aa43913d610c6fada58b7e2
+  revision: 208fe3690d840d0ee65b1395a891886e58fd3f4b
   specs:
     arel (8.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: acdbe70a02f4eec9e7dc085dfce615a3ddaf9d37
+  revision: 74689fda0ce7612d87c620a36097d2d7451f53c0
   specs:
     actioncable (5.1.0.alpha)
       actionpack (= 5.1.0.alpha)
@@ -76,7 +76,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/web-console.git
-  revision: 8753a1056c62da296fb0062d3bdb99f4a83d3631
+  revision: 7fabe8bf706f53e3f0e88e0eee8097adbad72c18
   specs:
     web-console (3.4.0)
       actionview (>= 5.0)
@@ -86,7 +86,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: 023e5dbda8fd8bbe6e6f24788b0b45a3e72080ff
+  revision: 7bae1f9a6249752a83fe94a7a3aec51a955e9c25
   specs:
     webpacker (0.2)
       activesupport (>= 5.0)
