@@ -3,6 +3,11 @@
 var path = require('path');
 var glob = require('glob');
 var extname = require('path-complete-extname');
+var distPath = process.env.WEBPACK_DIST_PATH;
+
+if (distPath === undefined) {
+  distPath = 'packs'
+}
 
 var config = {
   entry: glob.sync(path.join('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
