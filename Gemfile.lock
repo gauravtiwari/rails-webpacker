@@ -1,13 +1,4 @@
 GIT
-  remote: https://github.com/gauravtiwari/webpacker.git
-  revision: b800eed170824ac531d8087b4bd266cc5ce71d09
-  specs:
-    webpacker (0.2)
-      activesupport (>= 5.0)
-      multi_json (~> 1.2)
-      railties (>= 5.0)
-
-GIT
   remote: https://github.com/rails/arel.git
   revision: 208fe3690d840d0ee65b1395a891886e58fd3f4b
   specs:
@@ -15,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: e51572dce00c5f011f019397984ed8e82d94fc84
+  revision: c1b64429b1af45a4a526b3b5bb5a306a0d51e28a
   specs:
     actioncable (5.1.0.alpha)
       actionpack (= 5.1.0.alpha)
@@ -94,6 +85,15 @@ GIT
       railties (>= 5.0)
 
 GIT
+  remote: https://github.com/rails/webpacker.git
+  revision: c1afbb2a1fc15effe0317ec81ad3fac344ab5a1e
+  specs:
+    webpacker (0.2)
+      activesupport (>= 5.0)
+      multi_json (~> 1.2)
+      railties (>= 5.0)
+
+GIT
   remote: https://github.com/romanbsd/heroku-deflater.git
   revision: 3f0a360bfa4aea9159935201fff837fafdbe267f
   specs:
@@ -157,7 +157,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     pg (0.19.0)
-    puma (3.7.0)
+    puma (3.7.1)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
