@@ -10,15 +10,15 @@ if (distPath === undefined) {
 }
 
 var config = {
-  entry: glob.sync(path.resolve('..', 'app', 'javascript', 'packs', '*.js*')).reduce(
+  entry: glob.sync(path.resolve('app', 'javascript', 'packs', '*.js*')).reduce(
     function(map, entry) {
       basename = path.basename(entry, extname(entry))
-      map[basename] = entry;
+      map[basename] = path.resolve(entry);
       return map;
     }, {}
   ),
 
-  output: { filename: '[name].js', path: path.resolve('..', 'public', distPath) },
+  output: { filename: '[name].js', path: path.resolve('public', distPath) },
 
   module: {
     rules: [
@@ -39,7 +39,7 @@ var config = {
         enforce: 'pre',
         loader: 'rails-erb-loader',
         options: {
-          runner: '../bin/rails runner'
+          runner:  'bin/rails runner'
         }
       },
       {
@@ -58,13 +58,13 @@ var config = {
 
     extensions: [ '.js', '.coffee' ],
     modules: [
-      path.resolve('../app/javascript'),
-      path.resolve('../vendor/node_modules')
+      path.resolve('app/javascript'),
+      path.resolve('node_modules')
     ]
   },
 
   resolveLoader: {
-    modules: [ path.resolve('../vendor/node_modules') ]
+    modules: [ path.resolve('node_modules') ]
   }
 }
 

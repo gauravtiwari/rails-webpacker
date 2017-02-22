@@ -1,5 +1,8 @@
 Rails.application.configure do
   # Make javascript_pack_tag load assets from webpack-dev-server.
+  # config.x.webpacker[:dev_server_host] = "http://localhost:8080"
+
+  # Make javascript_pack_tag load assets from webpack-dev-server.
   config.x.webpacker[:dev_server_host] = 'http://localhost:8080'
 
   # Settings specified here will take precedence over those in config/application.rb.

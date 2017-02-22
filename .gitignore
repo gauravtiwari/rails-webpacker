@@ -17,11 +17,10 @@
 !/log/.keep
 !/tmp/.keep
 
-/vendor/node_modules
-
 .byebug_history
 
 # Ignore application configuration
 /config/application.yml
-/public/packs
 /public/assets
+/public/packs
+/node_modules
