@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/rails/arel.git
-  revision: 208fe3690d840d0ee65b1395a891886e58fd3f4b
+  revision: 668da2dfa951ea43f9b2c1171b225b10dba50a3a
   specs:
     arel (8.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: ba22c5ee84e7bbd22a3ba97eaa1d0bf9619cbfea
+  revision: 240e32bbbfb6943ac8d7f3fc4d6a6f685930d9ca
   specs:
     actioncable (5.1.0.alpha)
       actionpack (= 5.1.0.alpha)
@@ -86,7 +86,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: c1afbb2a1fc15effe0317ec81ad3fac344ab5a1e
+  revision: 35586c78e099d5939c19140c0ae1ceb826012f00
   specs:
     webpacker (0.2)
       activesupport (>= 5.0)
@@ -130,7 +130,7 @@ GEM
       thor (~> 0.19.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    i18n (0.8.0)
+    i18n (0.8.1)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
