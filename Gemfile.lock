@@ -1,70 +1,4 @@
 GIT
-  remote: https://github.com/rails/arel.git
-  revision: 668da2dfa951ea43f9b2c1171b225b10dba50a3a
-  specs:
-    arel (8.0.0)
-
-GIT
-  remote: https://github.com/rails/rails.git
-  revision: a92bd65e37bb08a08fd0aaf4d12c7c6cb92c2c17
-  specs:
-    actioncable (5.1.0.alpha)
-      actionpack (= 5.1.0.alpha)
-      nio4r (~> 2.0)
-      websocket-driver (~> 0.6.1)
-    actionmailer (5.1.0.alpha)
-      actionpack (= 5.1.0.alpha)
-      actionview (= 5.1.0.alpha)
-      activejob (= 5.1.0.alpha)
-      mail (~> 2.5, >= 2.5.4)
-      rails-dom-testing (~> 2.0)
-    actionpack (5.1.0.alpha)
-      actionview (= 5.1.0.alpha)
-      activesupport (= 5.1.0.alpha)
-      rack (~> 2.0)
-      rack-test (~> 0.6.3)
-      rails-dom-testing (~> 2.0)
-      rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (5.1.0.alpha)
-      activesupport (= 5.1.0.alpha)
-      builder (~> 3.1)
-      erubi (~> 1.4)
-      rails-dom-testing (~> 2.0)
-      rails-html-sanitizer (~> 1.0, >= 1.0.3)
-    activejob (5.1.0.alpha)
-      activesupport (= 5.1.0.alpha)
-      globalid (>= 0.3.6)
-    activemodel (5.1.0.alpha)
-      activesupport (= 5.1.0.alpha)
-    activerecord (5.1.0.alpha)
-      activemodel (= 5.1.0.alpha)
-      activesupport (= 5.1.0.alpha)
-      arel (~> 8.0)
-    activesupport (5.1.0.alpha)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-    rails (5.1.0.alpha)
-      actioncable (= 5.1.0.alpha)
-      actionmailer (= 5.1.0.alpha)
-      actionpack (= 5.1.0.alpha)
-      actionview (= 5.1.0.alpha)
-      activejob (= 5.1.0.alpha)
-      activemodel (= 5.1.0.alpha)
-      activerecord (= 5.1.0.alpha)
-      activesupport (= 5.1.0.alpha)
-      bundler (>= 1.3.0, < 2.0)
-      railties (= 5.1.0.alpha)
-      sprockets-rails (>= 2.0.0)
-    railties (5.1.0.alpha)
-      actionpack (= 5.1.0.alpha)
-      activesupport (= 5.1.0.alpha)
-      method_source
-      rake (>= 0.8.7)
-      thor (>= 0.18.1, < 2.0)
-
-GIT
   remote: https://github.com/rails/sass-rails.git
   revision: dfbcc6a53653d8908007e26324a0f299f026ec4f
   specs:
@@ -86,9 +20,9 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: f54cc9b0cc6fcd8267d5a176fe7e601c5f9a8ebb
+  revision: 8a84ec2823f76adb97e3518ffc4c129650503fef
   specs:
-    webpacker (0.2)
+    webpacker (1.0)
       activesupport (>= 5.0)
       multi_json (~> 1.2)
       railties (>= 5.0)
@@ -103,6 +37,44 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    actioncable (5.1.0.beta1)
+      actionpack (= 5.1.0.beta1)
+      nio4r (~> 2.0)
+      websocket-driver (~> 0.6.1)
+    actionmailer (5.1.0.beta1)
+      actionpack (= 5.1.0.beta1)
+      actionview (= 5.1.0.beta1)
+      activejob (= 5.1.0.beta1)
+      mail (~> 2.5, >= 2.5.4)
+      rails-dom-testing (~> 2.0)
+    actionpack (5.1.0.beta1)
+      actionview (= 5.1.0.beta1)
+      activesupport (= 5.1.0.beta1)
+      rack (~> 2.0)
+      rack-test (~> 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (5.1.0.beta1)
+      activesupport (= 5.1.0.beta1)
+      builder (~> 3.1)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    activejob (5.1.0.beta1)
+      activesupport (= 5.1.0.beta1)
+      globalid (>= 0.3.6)
+    activemodel (5.1.0.beta1)
+      activesupport (= 5.1.0.beta1)
+    activerecord (5.1.0.beta1)
+      activemodel (= 5.1.0.beta1)
+      activesupport (= 5.1.0.beta1)
+      arel (~> 8.0)
+    activesupport (5.1.0.beta1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    arel (8.0.0)
     bcrypt (3.1.11)
     builder (3.2.3)
     byebug (9.0.6)
@@ -131,8 +103,8 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.8.1)
-    jbuilder (2.6.1)
-      activesupport (>= 3.0.0, < 5.1)
+    jbuilder (2.6.3)
+      activesupport (>= 3.0.0, < 5.2)
       multi_json (~> 1.2)
     js-routes (1.3.2)
       railties (>= 3.2)
@@ -161,11 +133,29 @@ GEM
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails (5.1.0.beta1)
+      actioncable (= 5.1.0.beta1)
+      actionmailer (= 5.1.0.beta1)
+      actionpack (= 5.1.0.beta1)
+      actionview (= 5.1.0.beta1)
+      activejob (= 5.1.0.beta1)
+      activemodel (= 5.1.0.beta1)
+      activerecord (= 5.1.0.beta1)
+      activesupport (= 5.1.0.beta1)
+      bundler (>= 1.3.0, < 2.0)
+      railties (= 5.1.0.beta1)
+      sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    railties (5.1.0.beta1)
+      actionpack (= 5.1.0.beta1)
+      activesupport (= 5.1.0.beta1)
+      method_source
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
     rake (12.0.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
@@ -184,7 +174,7 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.3.13)
     thor (0.19.4)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
@@ -202,7 +192,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  arel!
   byebug
   coffee-rails
   devise
@@ -214,7 +203,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   pg
   puma (~> 3.0)
-  rails!
+  rails (>= 5.1.0.beta1)
   redis
   sass-rails!
   sqlite3
