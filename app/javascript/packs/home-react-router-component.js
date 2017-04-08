@@ -7,11 +7,13 @@ import { render } from 'react-dom';
 import {  BrowserRouter as Router, Route, history } from 'react-router-dom'
 
 document.addEventListener('DOMContentLoaded', () => {
-  render((
+  render(
     <Router history={history}>
-      <Route path="/" component={App} />
-      <Route path="/repos" component={Repos} />
-      <Route path="/about" component={About} />
+      <div>
+        <Route path="/" component={App} />
+        <Route path="/repos" component={Repos} />
+        <Route path="/about" component={About} />
+      </div>
     </Router>
-  ), document.getElementById('content'))
+  , document.getElementById('content'))
 });
