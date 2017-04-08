@@ -12,8 +12,4 @@ const Message = (props) => (
   </li>
 );
 
-Message.propTypes = {
-  message: React.PropTypes.object,
-};
-
 export default Message;

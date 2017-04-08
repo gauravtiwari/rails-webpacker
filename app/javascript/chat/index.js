@@ -39,7 +39,3 @@ export default class Room extends Component {
     );
   }
 }
-
-Room.propTypes = {
-  roomId: React.PropTypes.string,
-};

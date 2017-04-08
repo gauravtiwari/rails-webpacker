@@ -47,7 +47,3 @@ export default class Messages extends Component {
     );
   }
 }
-
-Messages.propTypes = {
-  messages: React.PropTypes.array,
-};

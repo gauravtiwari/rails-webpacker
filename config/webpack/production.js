@@ -1,44 +1,20 @@
-// Note: You must restart bin/webpack-watcher for changes to take effect
+/* eslint global-require: 0 */
+// Note: You must run bin/webpack for changes to take effect
 
-var webpack = require('webpack');
-var merge   = require('webpack-merge');
-var OptimizeJsPlugin = require('optimize-js-plugin');
+const webpack = require('webpack')
+const merge = require('webpack-merge')
+const CompressionPlugin = require('compression-webpack-plugin')
+const sharedConfig = require('./shared.js')
 
-var sharedConfig = require('./shared.js');
-
-module.exports = merge(sharedConfig.config, {
-  output: { filename: "[name]-[hash].js" },
+module.exports = merge(sharedConfig, {
+  output: { filename: '[name]-[chunkhash].js' },
 
   plugins: [
-    new webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false
-    }),
-
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production')
-      }
-    }),
-
-    new webpack.optimize.UglifyJsPlugin({
-      mangle: true,
-      sourceMap: false,
-      compress: {
-        warnings: false,
-        sequences: true,
-        dead_code: true,
-        conditionals: true,
-        booleans: true,
-        unused: true,
-        if_return: true,
-        join_vars: true,
-        drop_console: true,
-      },
-    }),
-
-    new OptimizeJsPlugin({
-      sourceMap: false
+    new webpack.optimize.UglifyJsPlugin(),
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.(js|css|svg|eot|ttf|woff|woff2)$/
     })
   ]
-});
+})

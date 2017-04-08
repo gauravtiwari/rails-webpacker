@@ -1,74 +1,52 @@
 // Note: You must restart bin/webpack-watcher for changes to take effect
+/* eslint global-require: 0 */
+/* eslint import/no-dynamic-require: 0 */
 
-var path = require('path');
-var glob = require('glob');
-var extname = require('path-complete-extname');
-var distPath = process.env.WEBPACK_DIST_PATH;
+const webpack = require('webpack')
+const { basename, dirname, join, relative, resolve } = require('path')
+const { sync } = require('glob')
+const { readdirSync } = require('fs')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ManifestPlugin = require('webpack-manifest-plugin')
+const extname = require('path-complete-extname')
+const { env, paths, publicPath, loadersDir } = require('./configuration.js')
 
-if (distPath === undefined) {
-  distPath = 'packs'
-}
+const extensionGlob = `**/*{${paths.extensions.join(',')}}*`
+const packPaths = sync(join(paths.source, paths.entry, extensionGlob))
 
-var config = {
-  entry: glob.sync(path.resolve('app', 'javascript', 'packs', '*.js*')).reduce(
-    function(map, entry) {
-      basename = path.basename(entry, extname(entry))
-      map[basename] = path.resolve(entry);
-      return map;
+module.exports = {
+  entry: packPaths.reduce(
+    (map, entry) => {
+      const localMap = map
+      const namespace = relative(join(paths.source, paths.entry), dirname(entry))
+      localMap[join(namespace, basename(entry, extname(entry)))] = resolve(entry)
+      return localMap
     }, {}
   ),
 
-  output: { filename: '[name].js', path: path.resolve('public', distPath) },
+  output: { filename: '[name].js', path: resolve(paths.output, paths.entry) },
 
   module: {
-    rules: [
-      { test: /\.coffee(.erb)?$/, loader: 'coffee-loader' },
-      {
-        test: /\.jsx?(.erb)?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          presets: [
-            'react',  ['latest', { 'es2015': { 'modules': false } }],
-            ['env', { "modules": false }],
-          ],
-        }
-      },
-      {
-        test: /\.erb$/,
-        enforce: 'pre',
-        loader: 'rails-erb-loader',
-        options: {
-          runner:  'bin/rails runner'
-        }
-      },
-      {
-        test: /\.sass$/,
-        loader: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-    ]
+    rules: readdirSync(loadersDir).map(file => (
+      require(join(loadersDir, file))
+    ))
   },
 
-  plugins: [],
+  plugins: [
+    new webpack.EnvironmentPlugin(JSON.parse(JSON.stringify(env))),
+    new ExtractTextPlugin(env.NODE_ENV === 'production' ? '[name]-[hash].css' : '[name].css'),
+    new ManifestPlugin({ fileName: paths.manifest, publicPath, writeToFileEmit: true })
+  ],
 
   resolve: {
-    alias: {
-      'ie': 'component-ie',
-    },
-
-    extensions: [ '.js', '.coffee' ],
+    extensions: paths.extensions,
     modules: [
-      path.resolve('app/javascript'),
-      path.resolve('node_modules')
+      resolve(paths.source),
+      resolve(paths.node_modules)
     ]
   },
 
   resolveLoader: {
-    modules: [ path.resolve('node_modules') ]
+    modules: [paths.node_modules]
   }
-}
-
-module.exports = {
-  distPath: distPath,
-  config: config
 }
