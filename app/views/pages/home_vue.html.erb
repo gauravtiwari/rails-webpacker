@@ -6,11 +6,12 @@
     <h1>{{ sidebar }}</h1>
   </aside>
   <%= render 'shared/nav' %>
+</div>
 
-  <h1>Vue Props example</h1>
-  <div id="example">
-    <profile username="<%= @username %>" name="<%= @name %>"></profile>
-  </div>
+
+<h1>Vue Props example</h1>
+<div id="example">
+  <profile username="<%= @username %>" name="<%= @name %>"></profile>
 </div>
 
 <%= javascript_pack_tag 'home-vue-component' %>
