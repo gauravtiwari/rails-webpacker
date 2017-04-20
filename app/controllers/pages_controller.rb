@@ -3,6 +3,8 @@ class PagesController < ApplicationController
   end
 
   def home_vue
+    @name = "John Doe"
+    @username = "john"
   end
 
   def home_angular

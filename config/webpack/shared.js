@@ -5,7 +5,6 @@
 const webpack = require('webpack')
 const { basename, dirname, join, relative, resolve } = require('path')
 const { sync } = require('glob')
-const { readdirSync } = require('fs')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const extname = require('path-complete-extname')
@@ -24,12 +23,14 @@ module.exports = {
     }, {}
   ),
 
-  output: { filename: '[name].js', path: resolve(paths.output, paths.entry) },
+  output: {
+    filename: '[name].js',
+    path: resolve(paths.output, paths.entry),
+    publicPath
+  },
 
   module: {
-    rules: readdirSync(loadersDir).map(file => (
-      require(join(loadersDir, file))
-    ))
+    rules: sync(join(loadersDir, '*.js')).map(loader => require(loader))
   },
 
   plugins: [
